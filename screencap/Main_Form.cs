@@ -68,7 +68,7 @@ namespace screencap
             Bitmap bmp = Capture.CaptureWindow(proc.MainWindowHandle);
             if (bmp.Height < 700 || bmp.Width < 1000)
             {
-                label_status.Text = "이브가 최소화상태임 작동중지.";
+                label_status.Text = "";
                 if (label_status.ForeColor == Color.Red)
                     label_status.ForeColor = Color.Black;
                 else
